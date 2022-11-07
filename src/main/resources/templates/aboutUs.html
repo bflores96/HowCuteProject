@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html
+        xmlns:th="http://www.thymeleaf.org"
+        xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+        layout:decorate="~{layout}">
+
+<head>
+    <meta charset="UTF-8">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" rel="stylesheet">
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.css"></script>
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+    <link rel="icon" type="image/ico" th:href="@{/img/logoicon.ico}"/>
+
+
+    <title>AboutUs</title>
+</head>
+
+<body>
+<div layout:fragment="content">
+
+
+<div class="about-section">
+    <h1>HowCute Anime Girls Edition</h1>
+    <p>Why is it created?</p>
+    <p>
+        I am currently freelancing because I needed to consolidate my knowledge of Java, Springboot, HTML, css, MySQL<br>
+        and others acquired this year 2022, and anime is something that I am passionate about,<br>
+        what better way than to continue learning with a topic that you like?<br>
+        I hope you enjoy it as much as I did creating it 👩‍💻</p>
+</div>
+
+
+<div class="row">
+    <div class="column">
+        <div class="card">
+            <img src="img/me.png" alt="Me" style="width:100%">
+            <div class="container">
+                <h2>Bárbara Flores</h2>
+                <p class="title">Junior Java Developer</p>
+                <p>I come to the world of programming, after a solid training,
+                    wishing to be able to contribute to the jobs that develop responsibility,
+                    commitment to achieving the objectives that are set for me and capacity for collaborative work.</p>
+                <p>barbii.f26@gmail.com</p>
+                <ul class="social-icons d-flex justify-content-center">
+
+                        <a href="https://github.com/bflores96" target="_blank">
+                            <span class="fab fa-github"></span>
+                        </a>
+
+
+                        <a href="https://www.linkedin.com/in/barbara-flores-aranda/" target="_blank">
+                            <span class="fab fa-linkedin"></span>
+                        </a>
+
+                </ul>
+                <p><button class="button">Contact</button></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+</div>
+
+
+</body>
+</html>
