@@ -16,6 +16,8 @@
 </head>
 
 <body>
+
+
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container-fluid">
 
@@ -26,13 +28,13 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link active" href="/" aria-current="page" >Home</a>
+                    <a class="nav-link active" href="/" aria-current="page" th:text=#{layout.home}></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/waifus" >Waifus</a>
+                    <a class="nav-link" href="/waifus" th:text=#{layout.waifus}></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link aboutUs" href="/aboutUs" >About us</a>
+                    <a class="nav-link aboutUs" href="/aboutUs" th:text=#{layout.aboutus}></a>
                 </li>
                 </form>
 
@@ -44,6 +46,10 @@
         </div>
     </div>
 </nav>
+<div class="internationalization">
+    <p> <a class="lang-en" th:href="@{/locale(language=en)}" th:text=#{index.locale.en}> English</a>
+    <p> <a class="lang-es" th:href="@{/locale(language=es)}" th:text=#{index.locale.es}> Spanish</a>
+</div>
 
 <div layout:fragment="content">
 

@@ -23,12 +23,8 @@
 
 <div class="about-section">
     <h1>HowCute Anime Girls Edition</h1>
-    <p>Why is it created?</p>
-    <p>
-        I am currently freelancing because I needed to consolidate my knowledge of Java, Springboot, HTML, css, MySQL<br>
-        and others acquired this year 2022, and anime is something that I am passionate about,<br>
-        what better way than to continue learning with a topic that you like?<br>
-        I hope you enjoy it as much as I did creating it 👩‍💻</p>
+    <p th:text="#{why.created}"></p>
+    <p class="about-text" th:text="#{freelance.text}"></p>
 </div>
 
 
@@ -38,20 +34,19 @@
             <img src="img/me.png" alt="Me" style="width:100%">
             <div class="container">
                 <h2>Bárbara Flores</h2>
-                <p class="title">Junior Java Developer</p>
-                <p>I come to the world of programming, after a solid training,
-                    wishing to be able to contribute to the jobs that develop responsibility,
-                    commitment to achieving the objectives that are set for me and capacity for collaborative work.</p>
+                <p class="title" th:text="#{dev.junior}"></p>
+                <p th:text="#{descrip.junior}"></p>
+
                 <p>barbii.f26@gmail.com</p>
                 <ul class="social-icons d-flex justify-content-center">
 
                         <a href="https://github.com/bflores96" target="_blank">
-                            <span class="fab fa-github"></span>
+                            <span class="fab fa-github fa-2x fa-pull-left"></span>
                         </a>
 
 
                         <a href="https://www.linkedin.com/in/barbara-flores-aranda/" target="_blank">
-                            <span class="fab fa-linkedin"></span>
+                            <span class="fab fa-linkedin fa-2x"></span>
                         </a>
 
                 </ul>

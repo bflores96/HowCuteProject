@@ -32,14 +32,16 @@
 
 .aboutUs{
     position: fixed;
-    left: 90%;
+    left: 88%;
     }
 
 
 .btn-primary{
+    transition-duration: 0.4s;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
     color: #000;
-    background-color: #bcbbd4;
-    border-color: #b56bf187;
+    background-color: #b56bf187;
+    border-color: #bcbbd4;
     font-size: 24px;
     }
 
@@ -47,10 +49,62 @@
 .btn-primary:hover{
      color: #000;
      background-color: #bcbbd4;
-     border-color: #b56bf1;
+     border-color: #b56bf187;
      }
 
+.button-test{
+    width: 35%;
+    margin-left: auto;
+    margin-right: auto;
+    display: table;
+    justify-content: center;
+    align-items: center;
+    height: 45px;
+    }
+
+.text-start{
+  width: 35%;
+  margin-left: auto;
+  margin-right: auto;
+    }
+
+.text-text{
+text-align: center;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+}
+
+.lang-en {
+  position: absolute;
+  top: 20px;
+  right: 16px;
+  font-size: 17px;
+  color: black;
+}
+
+.lang-en:hover{
+  color: #d27a6c;
+}
+
+.lang-es {
+  position: absolute;
+  top: 45px;
+  right: 16px;
+  font-size: 17px;
+  color: black;
+}
+
+.lang-es:hover{
+  color: #d27a6c;
+}
+
 /*aboutUs*/
+
 body {
   font-family: Arial, Helvetica, sans-serif;
   margin: 0;
@@ -79,11 +133,23 @@ html {
   margin: 8px;
 }
 
+.bg-image {
+ width:100%;
+ background: url("img/decoOne.png") 50% 0 no-repeat fixed;
+ background-size:cover;
+ opacity: 0.5;
+}
+
 .about-section {
   padding: 50px;
   text-align: center;
   background-color: #bcbbd4;
   color: black;
+}
+.about-text{
+  width: 45%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .container {

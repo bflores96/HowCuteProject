@@ -19,18 +19,25 @@
 <body>
     <div layout:fragment="content">
 
-        <div class="card text-center ">
+        <div class="card text-center">
+
             <div class="card-header card-title fw-bold">
-                &nbsp;<h5 class="card-title fw-bold">What is your waifu personality?</h5></p>
+                &nbsp;<h5 class="card-title fw-bold" th:text="#{welcomepage.welcome.ask}"></h5>
             </div>
-            <div class="card-body">
-                <p class="card-text">Despite the fact that you already have a favorite waifu with whom you identify,<br>
-                    you can do a test to know more clearly who specifically is closer to your soul,<br>
-                    without visually identifying yourself with her, because she will choose you.</p>
-                <a class="btn btn-primary" href="/question" >Start Test</a>
-                <div>
-                    <img class="answer" th:src="@{/img/answerquestions.png}" alt="Imagen">
+
+            <div class="card-body text-start">
+
+                <div class="bg-image" style="@{/img/decoOne.png}" alt="Imagen">
                 </div>
+
+                <p class="card-text text-text" th:text="#{text.start.test}"></p>
+
+                <a class="btn btn-primary btn-lg button-test posit-btn" href="/question" th:text="#{start.test.button}"></a>
+
+                <div>
+                    <img class="answer center" th:src="@{/img/answerquestions.png}" alt="Imagen">
+                </div>
+
             </div>
         </div>
     </div>
