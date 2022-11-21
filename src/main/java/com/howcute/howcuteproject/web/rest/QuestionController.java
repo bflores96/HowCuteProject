@@ -18,6 +18,8 @@ public class QuestionController {
     @GetMapping("/question/{id}")
     public String findById(@PathVariable("id") Integer id, ModelMap model) {
         model.addAttribute("question", this.questionService.findById(id));
+        System.out.println(id);
+        System.out.println(this.questionService.findById(id));
         return "question";
     }
 }

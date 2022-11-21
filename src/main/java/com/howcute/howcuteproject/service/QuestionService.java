@@ -1,9 +1,7 @@
 package com.howcute.howcuteproject.service;
 
 import com.howcute.howcuteproject.data.entity.Question;
-import com.howcute.howcuteproject.data.entity.Waifus;
 import com.howcute.howcuteproject.data.repository.QuestionRepository;
-import com.howcute.howcuteproject.data.repository.WaifusRepository;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 
