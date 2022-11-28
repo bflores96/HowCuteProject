@@ -28,10 +28,12 @@
             <div class="modal-body-quiz">
                 <div class="col-xs-3 5"></div>
                 <div class="question" id="question" data-toggle="buttons">
-                    <label class="element-animation1 btn btn-lg btn btn btn-secondary btn-block"><span class="btn-label"><i class="glyphicon glyphicon-chevron-right"></i></span> <input type="radio" name="q_answer" value="1">HyperText Markup Language.</label>
-                    <label class="element-animation2 btn btn-lg btn btn btn-secondary btn-block"><span class="btn-label"><i class="glyphicon glyphicon-chevron-right"></i></span> <input type="radio" name="q_answer" value="2">HighText Markup Language.</label>
-                    <label class="element-animation3 btn btn-lg btn btn btn-secondary btn-block"><span class="btn-label"><i class="glyphicon glyphicon-chevron-right"></i></span> <input type="radio" name="q_answer" value="3">HyperText Markdown Language.</label>
-                    <label class="element-animation4 btn btn-lg btn btn btn-secondary btn-block"><span class="btn-label"><i class="glyphicon glyphicon-chevron-right"></i></span> <input type="radio" name="q_answer" value="4">None of the above.</label>
+
+                    <label class="element-animation1 btn btn-lg btn btn btn-secondary btn-block form-button" th:each="answer : ${question.answers}">
+                        <span class="btn-label"><i class="glyphicon glyphicon-chevron-right"></i></span>
+                        <input type="radio" name="answer" value="1"  th:text="${answer.answer}">
+                    </label>
+
                 </div>
             </div>
         <div>
@@ -41,8 +43,6 @@
         </div>
     </div>
 </div>
-
-        <img class="question-image decotwo" src="img/decoTwo.png" alt="decoTwo">
 
 </div>
 

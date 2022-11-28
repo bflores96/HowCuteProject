@@ -10,7 +10,7 @@
           integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" rel="stylesheet">
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.css"></script>
-    <link rel="stylesheet" th:href="@{/css/style.css}">
+    <link rel="stylesheet" th:href="@{/css/waifustyle.css}">
     <link rel="icon" type="image/ico" th:href="@{/img/logoicon.ico}"/>
 
     <title>HowCuteWaifus</title>
@@ -19,177 +19,219 @@
 <body>
 <div layout:fragment="content">
 
-<div class="row">
-<div class="card" style="width: 18rem;">
-    <div class="col-md-6 col-lg-4">&nbsp;</div>
-    <img class="card-img-top img-fluid equal-height-cards" src="img/zerotwo.png" alt="Card image cap">
-    <div class="card-block">
-        <h5 class="card-title">Zero Two</h5>
-        <p class="card-text" th:text="#{card.1}"></p>
-        <form action="https://www3.animeflv.net/anime/darling-in-the-franxx">
-            <input type="submit" th:text="#{click.watch}"  />
-        </form>
+    <div class="row row-cols-1 row-cols-md-5 g-14">
+        <div class="col h-100 d-flex">
+    <div class="card" style="width: 18rem;">
+        <img src="img/zerotwo.png" class="card-img-top" alt="Card image cap">
+        <div class="card-body">
+            <h5 class="card-title">Zero Two</h5>
+            <p class="card-text" th:text="#{card.1}"></p>
+            <form action="https://www3.animeflv.net/anime/darling-in-the-franxx">
+                <input type="submit" value="Watch Anime" />
+            </form>
+        </div>
     </div>
-</div>
+    </div>
 
-<div class="card" style="width: 18rem;">
-    <div class="col-md-6 col-lg-4">&nbsp;</div>
-    <img class="card-img-top img-fluid equal-height-cards" src="img/daki.jpg" alt="Card image cap">
-    <div class="card-block">
+    <div class="col d-flex">
+        <div class="row">
+        <div class="card h-100" style="width: 18rem;">
+    <img src="img/daki.jpg" class="card-img-top" alt="Card image cap">
+    <div class="card-body">
         <h5 class="card-title">Daki</h5>
         <p class="card-text" th:text="#{card.2}"></p>
         <form action="https://www3.animeflv.net/anime/kimetsu-no-yaiba">
             <input type="submit" value="Watch Anime" />
         </form>
     </div>
+        </div>
+        </div>
 </div>
 
-<div class="card" style="width: 18rem;">
-    <div class="col-md-6 col-lg-4">&nbsp;</div>
-    <img class="card-img-top img-fluid equal-height-cards" src="img/lucycyberpunk.jpg" alt="Card image cap">
-    <div class="card-block">
+    <div class="col d-flex">
+        <div class="row">
+        <div class="card h-100" style="width: 18rem;">
+    <img src="img/lucycyberpunk.jpg" class="card-img-top" alt="Card image cap">
+    <div class="card-body">
         <h5 class="card-title">Lucy</h5>
         <p class="card-text" th:text="#{card.3}"></p>
         <form action="https://www3.animeflv.net/anime/cyberpunk-edgerunners">
             <input type="submit" value="Watch Anime" />
         </form>
     </div>
+        </div>
+        </div>
 </div>
 
-<div class="card" style="width: 18rem;">
-    <div class="col-md-6 col-lg-4">&nbsp;</div>
-    <img class="card-img-top img-fluid equal-height-cards" src="img/kanao.jpeg" alt="Card image cap">
-    <div class="card-block">
+    <div class="col d-flex">
+        <div class="row">
+       <div class="card h-100" style="width: 18rem;">
+    <img src="img/kanao.jpeg" class="card-img-top" alt="Card image cap">
+    <div class="card-body">
         <h5 class="card-title">Kanao</h5>
         <p class="card-text" th:text="#{card.4}"></p>
         <form action="https://www3.animeflv.net/anime/kimetsu-no-yaiba">
             <input type="submit" value="Watch Anime" />
         </form>
     </div>
+       </div>
+        </div>
 </div>
 
-    <div class="card" style="width: 18rem;">
-        <div class="col-md-6 col-lg-4">&nbsp;</div>
-        <img class="card-img-top img-fluid equal-height-cards" src="img/komisan.jpeg" alt="Card image cap">
-        <div class="card-block">
+     <div class="col d-flex">
+         <div class="row">
+        <div class="card h-100" style="width: 18rem;">
+     <img src="img/komisan.jpeg" class="card-img-top" alt="Card image cap">
+        <div class="card-body">
             <h5 class="card-title">Komisan</h5>
             <p class="card-text" th:text="#{card.5}"></p>
             <form action="https://www3.animeflv.net/anime/komisan-wa-comyushou-desu">
                 <input type="submit" value="Watch Anime" />
             </form>
         </div>
+        </div>
+         </div>
     </div>
 
-    <div class="card" style="width: 18rem;">
-        <div class="col-md-6 col-lg-4">&nbsp;</div>
-        <img class="card-img-top img-fluid equal-height-cards" src="img/marinkitagawa.jpg" alt="Card image cap">
-        <div class="card-block">
+    <div class="col d-flex">
+        <div class="row">
+         <div class="card h-100" style="width: 18rem;">
+    <img src="img/marinkitagawa.jpg" class="card-img-top" alt="Card image cap">
+        <div class="card-body">
             <h5 class="card-title">Marin Kitagawa</h5>
             <p class="card-text" th:text="#{card.6}"></p>
             <form action="https://www3.animeflv.net/anime/sono-bisque-doll-wa-koi-wo-suru">
                 <input type="submit" value="Watch Anime" />
             </form>
         </div>
+         </div>
+        </div>
     </div>
 
-    <div class="card" style="width: 18rem;">
-        <div class="col-md-6 col-lg-4">&nbsp;</div>
-        <img class="card-img-top img-fluid equal-height-cards" src="img/mikasa.jpg" alt="Card image cap">
-        <div class="card-block">
+    <div class="col d-flex">
+        <div class="row">
+          <div class="card h-100" style="width: 18rem;">
+    <img src="img/mikasa.jpg" class="card-img-top" alt="Card image cap">
+        <div class="card-body">
             <h5 class="card-title">Mikasa</h5>
             <p class="card-text" th:text="#{card.7}"></p>
             <form action="https://www3.animeflv.net/anime/shingeki-no-kyojin">
                 <input type="submit" value="Watch Anime" />
             </form>
         </div>
+          </div>
+          </div>
     </div>
 
-    <div class="card" style="width: 18rem;">
-        <div class="col-md-6 col-lg-4">&nbsp;</div>
-        <img class="card-img-top img-fluid equal-height-cards" src="img/misaamane.jpg" alt="Card image cap">
-        <div class="card-block">
+    <div class="col d-flex">
+        <div class="row">
+          <div class="card h-100" style="width: 18rem;">
+    <img src="img/misaamane.jpg" class="card-img-top" alt="Card image cap">
+        <div class="card-body">
             <h5 class="card-title">Misa Amane</h5>
             <p class="card-text" th:text="#{card.8}"></p>
             <form action="https://www3.animeflv.net/anime/death-note">
                 <input type="submit" value="Watch Anime" />
             </form>
         </div>
+          </div>
+          </div>
     </div>
 
-    <div class="card" style="width: 18rem;">
-        <div class="col-md-6 col-lg-4">&nbsp;</div>
-        <img class="card-img-top img-fluid equal-height-cards" src="img/mitsurikanroji.jpg" alt="Card image cap">
-        <div class="card-block">
+    <div class="col d-flex">
+        <div class="row">
+        <div class="card h-100" style="width: 18rem;">
+    <img src="img/mitsurikanroji.jpg" class="card-img-top" alt="Card image cap">
+        <div class="card-body">
             <h5 class="card-title">Mitsuri Kanroji</h5>
             <p class="card-text" th:text="#{card.9}"></p>
             <form action="https://www3.animeflv.net/anime/kimetsu-no-yaiba">
                 <input type="submit" value="Watch Anime" />
             </form>
         </div>
+        </div>
+        </div>
     </div>
 
-    <div class="card" style="width: 18rem;">
-        <div class="col-md-6 col-lg-4">&nbsp;</div>
-        <img class="card-img-top img-fluid equal-height-cards" src="img/nezuko.jpg" alt="Card image cap">
-        <div class="card-block">
+    <div class="col d-flex">
+        <div class="row">
+         <div class="card h-100" style="width: 18rem;">
+    <img src="img/nezuko.jpg" class="card-img-top" alt="Card image cap">
+        <div class="card-body">
             <h5 class="card-title">Nezuko</h5>
             <p class="card-text" th:text="#{card.10}"></p>
             <form action="https://www3.animeflv.net/anime/kimetsu-no-yaiba">
                 <input type="submit" value="Watch Anime" />
             </form>
         </div>
+         </div>
+         </div>
     </div>
 
-    <div class="card" style="width: 18rem;">
-        <div class="col-md-6 col-lg-4">&nbsp;</div>
-        <img class="card-img-top img-fluid equal-height-cards" src="img/power.jpg" alt="Card image cap">
-        <div class="card-block">
+    <div class="col d-flex">
+        <div class="row">
+          <div class="card h-100" style="width: 18rem;">
+    <img src="img/power.jpg" class="card-img-top" alt="Card image cap">
+        <div class="card-body">
             <h5 class="card-title">Power</h5>
             <p class="card-text" th:text="#{card.11}"></p>
             <form action="https://www3.animeflv.net/anime/chainsaw-man">
                 <input type="submit" value="Watch Anime" />
             </form>
         </div>
+          </div>
+          </div>
     </div>
 
-    <div class="card" style="width: 18rem;">
-        <div class="col-md-6 col-lg-4">&nbsp;</div>
-        <img class="card-img-top img-fluid equal-height-cards" src="img/shiro.png" alt="Card image cap">
-        <div class="card-block">
+    <div class="col d-flex">
+        <div class="row">
+         <div class="card h-100" style="width: 18rem;">
+    <img src="img/shiro.png" class="card-img-top" alt="Card image cap">
+        <div class="card-body">
             <h5 class="card-title">Shiro</h5>
             <p class="card-text" th:text="#{card.12}"></p>
             <form action="https://www3.animeflv.net/anime/no-game-no-life">
                 <input type="submit" value="Watch Anime" />
             </form>
         </div>
+         </div>
+         </div>
     </div>
 
-    <div class="card" style="width: 18rem;">
-        <div class="col-md-6 col-lg-4">&nbsp;</div>
-        <img class="card-img-top img-fluid equal-height-cards" src="img/violetevergarden.png" alt="Card image cap">
-        <div class="card-block">
+    <div class="col d-flex">
+        <div class="row">
+           <div class="card h-100" style="width: 18rem;">
+    <img src="img/violetevergarden.png" class="card-img-top" alt="Card image cap">
+        <div class="card-body">
             <h5 class="card-title">Violet Evergarden</h5>
             <p class="card-text" th:text="#{card.13}"></p>
             <form action="https://www3.animeflv.net/anime/violet-evergarden">
                 <input type="submit" value="Watch Anime" />
             </form>
         </div>
+           </div>
+           </div>
     </div>
 
-    <div class="card" style="width: 18rem;">
-        <div class="col-md-6 col-lg-4">&nbsp;</div>
-        <img class="card-img-top img-fluid equal-height-cards" src="img/yumeko.png" alt="Card image cap">
-        <div class="card-block">
+    <div class="col d-flex">
+        <div class="row">
+         <div class="card h-100" style="width: 18rem;">
+    <img src="img/yumeko.png" class="card-img-top" alt="Card image cap">
+        <div class="card-body">
             <h5 class="card-title">Yumeko</h5>
             <p class="card-text" th:text="#{card.14}"></p>
             <form action="https://www3.animeflv.net/anime/kakegurui">
                 <input type="submit" value="Watch Anime" />
             </form>
         </div>
+         </div>
     </div>
 </div>
 
+    </div>
 </div>
+
+
 
 </body>
 </html>

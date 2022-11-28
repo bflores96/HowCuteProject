@@ -1,0 +1,52 @@
+/*waifus*/
+
+body  {
+  background-image: url(/img/decoOne.png);
+  background-color: #F7EFFA;
+
+}
+
+.cards {
+    display: grid;
+    flex-wrap: nowrap;
+    grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+    grid-gap: 20px;
+
+}
+
+.card {
+    display: grid;
+    grid-template-rows: max-content 200px 1fr;
+      /* Add shadows to create the "card" effect */
+      box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+      transition: 0.3s;
+      background-image: url(img/decoOne.png) !important;
+}
+
+.card-img-top {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+/* Add some padding inside the card container */
+.card-body {
+  padding: 2px 16px;
+}
+
+.row{
+margin-top: auto;
+margin-right: auto;
+margin-left: auto;
+}
+
+.col{
+    display: flex;
+    justify-content: center !important;
+}

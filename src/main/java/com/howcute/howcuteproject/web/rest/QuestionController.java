@@ -1,6 +1,8 @@
 package com.howcute.howcuteproject.web.rest;
 
 import com.howcute.howcuteproject.service.QuestionService;
+import org.springframework.data.domain.PageRequest;
+import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -20,6 +22,8 @@ public class QuestionController {
         model.addAttribute("question", this.questionService.findById(id));
         System.out.println(id);
         System.out.println(this.questionService.findById(id));
+        Pageable pageable = PageRequest.of(0, 5);
+        System.out.println(this.questionService.findAll(pageable));
         return "question";
     }
 }

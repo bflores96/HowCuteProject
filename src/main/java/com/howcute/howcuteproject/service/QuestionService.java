@@ -6,6 +6,7 @@ import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.Optional;
 
 @Service
 public class QuestionService {
@@ -19,8 +20,8 @@ public class QuestionService {
         return repository.findAll(pageable).toList();
     }
 
-    public Question findById(Integer id) {
-        return repository.findById(id).orElseThrow(() -> new RuntimeException(String.format("El Id %d no existe", id)));
+    public Optional<Question> findById(Integer id) {
+        return repository.findById(id);
     }
 
     public void deleteById(Integer id) {

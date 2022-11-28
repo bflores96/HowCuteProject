@@ -12,7 +12,15 @@ public class Question {
     private String question;
 
     @OneToMany(mappedBy = "question")
-    private Set<Answer> answer;
+    private Set<Answer> answers;
+
+    public Set<Answer> getAnswers() {
+        return answers;
+    }
+
+    public void setAnswers(Set<Answer> answers) {
+        this.answers = answers;
+    }
 
     public Integer getId() {
         return id;
