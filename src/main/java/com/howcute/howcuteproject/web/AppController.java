@@ -28,8 +28,6 @@ public class AppController {
     @GetMapping("/aboutUs")
     public String aboutUs()  { return "aboutUs"; }
 
-    @GetMapping("/waifus")
-    public String waifus()  { return "waifus"; }
 
     @GetMapping("/question")
     public String question()  { return "question"; }

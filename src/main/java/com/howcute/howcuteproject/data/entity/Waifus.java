@@ -13,7 +13,9 @@ public class Waifus {
     @Column
     private String description;
     @Column
-    private Integer photo;
+    private String photo;
+    @Column
+    private String url;
 
 
 
@@ -41,11 +43,15 @@ public class Waifus {
         this.description = description;
     }
 
-    public Integer getPhoto() {
+    public String getPhoto() {
         return photo;
     }
 
-    public void setPhoto(Integer photo) {
+    public void setPhoto(String photo) {
         this.photo = photo;
     }
+
+    public String getUrl() {return url;}
+
+    public void setUrl(String url) {this.url = url;}
 }

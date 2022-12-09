@@ -1,4 +1,4 @@
-:root {
+:root{
     --lila: #b56bf187;
     --grislogogato: #bcbbd4;
     --grisoscurogato: #978CA5;
@@ -9,8 +9,15 @@
     --rojito: #D27A6C;
 }
 
-/*welcomepage*/
-.logo{
+/*layout*/
+
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+
+.my-logo{
     left: 90%;
     top: 0%;
     width: 20%;
@@ -18,7 +25,7 @@
 }
 
 
-.container-fluid{
+.my-contain{
     display: absolute;
     height: 4em;
     background: #b56bf187;
@@ -31,13 +38,47 @@
 }
 
 
-.aboutUs{
+.apart{
     position: fixed;
     left: 88%;
     }
 
 
-.btn-primary{
+.aboutUs{
+    position: fixed;
+}
+
+.lang-en{
+  position: absolute;
+  top: 20px;
+  right: 16px;
+  font-size: 17px;
+  color: black;
+}
+
+
+.lang-en:hover{
+  color: #d27a6c;
+}
+
+
+.lang-es{
+  position: absolute;
+  top: 45px;
+  right: 16px;
+  font-size: 17px;
+  color: black;
+}
+
+
+.lang-es:hover{
+  color: #d27a6c;
+}
+
+
+/*welcomepage*/
+
+.posit-btn{
     transition-duration: 0.4s;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
     color: #000;
@@ -47,7 +88,7 @@
     }
 
 
-.btn-primary:hover{
+.posit-btn:hover{
      color: #000;
      background-color: #bcbbd4;
      border-color: #b56bf187;
@@ -69,128 +110,18 @@
   margin-right: auto;
     }
 
-.text-text{
+.my-text{
 text-align: center;
 }
 
-.center {
+.center{
   display: block;
   margin-left: auto;
   margin-right: auto;
   width: 70%;
 }
 
-.lang-en {
-  position: absolute;
-  top: 20px;
-  right: 16px;
-  font-size: 17px;
-  color: black;
-}
+/*testFinished*/
 
-.lang-en:hover{
-  color: #d27a6c;
-}
 
-.lang-es {
-  position: absolute;
-  top: 45px;
-  right: 16px;
-  font-size: 17px;
-  color: black;
-}
-
-.lang-es:hover{
-  color: #d27a6c;
-}
-
-/*aboutUs*/
-
-body {
-  font-family: Arial, Helvetica, sans-serif;
-  margin: 0;
-}
-
-html {
-  box-sizing: border-box;
-}
-
-*, *:before, *:after {
-  box-sizing: inherit;
-}
-
-.column {
-  float: left;
-  width: 33.3%;
-  margin-bottom: 16px;
-  padding: 0 8px;
-          margin: 0 auto; /* Added */
-          float: none; /* Added */
-          margin-bottom: 10px; /* Added */
-}
-
-.card-me {
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  transition: 0.3s;
-  margin: 8px;
-}
-
-.card-me:hover {
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-}
-
-.bg-image {
- width:100%;
- background: url("img/decoOne.png") 50% 0 no-repeat fixed;
- background-size:cover;
- opacity: 0.5;
-}
-
-.about-section {
-  padding: 50px;
-  text-align: center;
-  background-color: #bcbbd4;
-  color: black;
-}
-.about-text{
-  width: 45%;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.container {
-  padding: 0 16px;
-}
-
-.container::after, .row::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-
-.title {
-  color: grey;
-}
-
-.button {
-  border: none;
-  outline: 0;
-  display: inline-block;
-  padding: 8px;
-  color: white;
-  background-color: #000;
-  text-align: center;
-  cursor: pointer;
-  width: 100%;
-}
-
-.button:hover {
-  background-color: #555;
-}
-
-@media screen and (max-width: 650px) {
-  .column {
-    width: 100%;
-    display: block;
-  }
 

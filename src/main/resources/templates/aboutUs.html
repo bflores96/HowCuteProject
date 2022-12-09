@@ -10,7 +10,7 @@
           integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" rel="stylesheet">
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.css"></script>
-    <link rel="stylesheet" th:href="@{/css/style.css}">
+    <link rel="stylesheet" th:href="@{/css/about.css}">
     <link rel="icon" type="image/ico" th:href="@{/img/logoicon.ico}"/>
 
 
@@ -21,20 +21,20 @@
 <div layout:fragment="content">
 
 
-<div class="about-section">
+<div class="about-section about-me">
     <h1>HowCute Anime Girls Edition</h1>
     <p th:text="#{why.created}"></p>
-    <p class="about-text" th:text="#{freelance.text}"></p>
+    <p class="about-text text-me" th:text="#{freelance.text}"></p>
 </div>
 
 
 <div class="row">
-    <div class="column">
-        <div class="card-me">
+    <div class="column my-column">
+        <div class="card card-me">
             <img src="img/me.png" alt="Me" style="width:100%">
-            <div class="container">
+            <div class="container cont-me">
                 <h2>Bárbara Flores</h2>
-                <p class="title" th:text="#{dev.junior}"></p>
+                <p class="title tit" th:text="#{dev.junior}"></p>
                 <p th:text="#{descrip.junior}"></p>
 
                 <p>barbii.f26@gmail.com</p>
@@ -50,7 +50,7 @@
                         </a>
 
                 </ul>
-                <p><button class="button">Contact</button></p>
+                <p><button class="button contact-me">Contact</button></p>
             </div>
         </div>
     </div>
