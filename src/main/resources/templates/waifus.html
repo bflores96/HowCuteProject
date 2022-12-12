@@ -5,6 +5,7 @@
         layout:decorate="~{layout}">
 
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" th:href="@{/css/waifustyle.css}">
     <title>HowCuteWaifus</title>
 </head>
@@ -16,20 +17,27 @@
     <div class="container">
         <div class="row">
             <div class="col">
+            <div id="myModal" class="modal mdl">
+                <span class="close cls">&times;</span>
+                <img class="modal-content mod-cont" id="img01">
+                <div id="caption"></div>
+            </div>
                 <div class="waifuGrid">
                     <div class="card my-card" th:each="wife : ${waifus}">
-                        <img th:src="'/img/' + ${wife.photo}" class="card-img-top">
+                        <img th:src="'/img/' + ${wife.photo}" th:alt="${wife.name}" class="card-img-top waifuImg">
                         <div class="card-body">
                             <h5  th:text="${wife.name}"></h5>
                             <p class="card-text" th:text="${wife.description}"></p>
-                            <a class="btn btn-primary" th:href="${wife.url}">Watch Anime</a>
+                            <a class="btn btn-primary watch-url" th:href="${wife.url}">Watch Anime</a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+        <script src="/js/waifuimg.js"></script>
     </div>
 </div>
+
 
 
 
