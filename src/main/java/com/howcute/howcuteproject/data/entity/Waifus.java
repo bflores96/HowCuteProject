@@ -16,6 +16,8 @@ public class Waifus {
     private String photo;
     @Column
     private String url;
+    @Column
+    private String personality;
 
 
 
@@ -54,4 +56,8 @@ public class Waifus {
     public String getUrl() {return url;}
 
     public void setUrl(String url) {this.url = url;}
+
+    public String getPersonality() {return personality;}
+
+    public void setPersonality(String personality) {this.personality = personality;}
 }

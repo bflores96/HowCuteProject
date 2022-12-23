@@ -15,8 +15,8 @@
 
 
     <div class="container">
-        <div class="row">
-            <div class="col">
+        <div class="row my-row">
+            <div class="col my-col">
             <div id="myModal" class="modal mdl">
                 <span class="close cls">&times;</span>
                 <img class="modal-content mod-cont" id="img01">
@@ -28,7 +28,9 @@
                         <div class="card-body">
                             <h5  th:text="${wife.name}"></h5>
                             <p class="card-text" th:text="${wife.description}"></p>
-                            <a class="btn btn-primary watch-url" th:href="${wife.url}">Watch Anime</a>
+                            <div class="watch-url d-flex">
+                            <a class="btn btn-primary" th:href="${wife.url}" target="_blank">Watch Anime</a>
+                            </div>
                         </div>
                     </div>
                 </div>

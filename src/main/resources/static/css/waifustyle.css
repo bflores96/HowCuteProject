@@ -19,9 +19,27 @@ body{
 }
 
 
+.my-row {margin: 0 -5px;}
+
+
+.my-row:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.my-col{
+    float: left;
+    width: 25%;
+    padding: 0 10px;
+}
+
+
 .waifuGrid{
+    margin: 0 auto;
+    max-width: 1000px;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(auto-fill, minmax(225px, 1fr));
     gap: 30px;
 }
 
@@ -104,4 +122,8 @@ body{
   .mod-cont {
     width: 100%;
   }
+}
+
+.watch-url{
+    bottom: 20px;
 }

@@ -42,10 +42,11 @@
 
                 </div>
             </div>
-        <div>
+        <div class="wrapper">
             <a th:href="@{'/question/' + ${question.id-1}}" class="previous my-quest">&laquo; Previous</a>
             <a th:href="@{'/question/' + ${question.id+1}}" class="next my-quest" >Next &raquo;</a>
 
+            <a class="btn btn-primary btn-lg button-test posit-btn" href="/result" th:text="#{finish.test.button}"></a>
         </div>
         </div>
         </div>

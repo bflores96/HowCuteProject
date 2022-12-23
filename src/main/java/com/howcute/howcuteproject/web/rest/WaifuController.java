@@ -24,4 +24,11 @@ public class WaifuController {
         model.addAttribute("waifus", this.waifuService.findAll(wholePage));
         return "waifus";
     }
+
+    @GetMapping("/result")
+    public String findByIdResult(ModelMap model) {
+        Pageable wholePage = Pageable.unpaged();
+        model.addAttribute("waifus", this.waifuService.findAll(wholePage));
+        return "result";
+    }
 }

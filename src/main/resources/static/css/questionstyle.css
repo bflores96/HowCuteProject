@@ -75,14 +75,26 @@ body{
 
 .my-quest{
     text-decoration: none;
-    display: inline-block;
     padding: 8px 16px;
+    margin: 10px;
+    box-shadow: 0 0 1px #ccc;
+    -webkit-transition: all 0.2s ease-in-out;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+.wrapper{
+    text-align: center;
 }
 
 
 .my-quest:hover{
-    background-color: #F7EFFA;
+    background-color: #a3beda;
     color: black;
+    -webkit-transform: scale(1.1);
 }
 
 
